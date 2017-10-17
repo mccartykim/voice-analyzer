@@ -101,7 +101,8 @@
     analyser.getFloatTimeDomainData(corrBuffer);
     var roundedPitch = autoCorrelate();
     roundedPitch = roundedPitch === -1 ? -1 : roundedPitch.toFixed(2);
-    if (roundedPitch !== lastPitch) {
+    //experimenting with reload on each frame
+    if (true || roundedPitch !== lastPitch) {
       pitchChangeHandler(roundedPitch);
       lastPitch = roundedPitch;
     }
