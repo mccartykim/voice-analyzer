@@ -55,7 +55,7 @@ function changeTargetPitch(value) {
 setInterval(() => counter += 1);
 
 microphonePitch.onPitchChange((pitch) => {
-  if (pitch !== -1 && pitch < 300) {
+  if (pitch !== -1 && pitch < 400) {
     if (pitchData.length < numPitch) {
       console.log(numPitch);
       pitchData.push(parseInt(pitch));
